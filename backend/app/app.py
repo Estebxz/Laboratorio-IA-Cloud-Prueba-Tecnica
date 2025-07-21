@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 
 from components.header import show_header
 from components.preview import show_preview
@@ -14,7 +15,8 @@ st.set_page_config(
 )
 
 # Cargar modelo y vectorizador
-modelo = joblib.load("models/model.pkl")
+model_path = os.path.join(os.path.dirname(__file__), "models", "model.pkl")
+modelo = joblib.load(model_path)
 vectorizador = joblib.load("models/vectorizer.pkl")
 
 # Cargar datos
