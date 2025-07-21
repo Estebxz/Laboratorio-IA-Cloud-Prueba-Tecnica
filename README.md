@@ -74,3 +74,9 @@ docker build -t pqr-ai .
 docker run -p 8501:8501 pqr-ai
 ```
 <p align="right">(<a href="#readme-top">volver arriba</a>)</p>
+
+---
+## 🫀 Agradecimiento
+
+- Después de varios intentos con este proyecto, no habría podido completarlo a tiempo sin la ayuda de Gabriel Beltrán, quien en una sola sesión me demostro de manera clara todo lo aprendido a lo largo del curso. Su apoyo fue clave, muchas gracias
+---
