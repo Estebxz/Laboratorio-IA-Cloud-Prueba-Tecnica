@@ -17,6 +17,7 @@ st.set_page_config(
 # Cargar modelo y vectorizador
 model_path = os.path.join(os.path.dirname(__file__), "models", "model.pkl")
 modelo = joblib.load(model_path)
+vectorizer_path = os.path.join(os.path.dirname(__file__), "models", "vectorizer.pkl")
 vectorizador = joblib.load("models/vectorizer.pkl")
 
 # Cargar datos
