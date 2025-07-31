@@ -9,7 +9,7 @@ from components.graphic import show_graphic
 from components.classify import show_classifier
 # Configurar la app
 st.set_page_config(
-    page_title="Clasificador de Solicitudes Ciudadanas",
+    page_title="Clasificador",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
@@ -23,7 +23,7 @@ vectorizador = joblib.load("models/vectorizer.pkl")
 # Cargar datos
 @st.cache_data
 def cargar_datos():
-    return pd.read_csv("data/solicitudes_ciudadanas.csv")
+    return pd.read_csv("data/Casos_de_violencia_de_genero_20250731.csv")
 
 df = cargar_datos()
 
